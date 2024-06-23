@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movies</title>
+<style>
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-image: url(13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    background-color: #0000009d;
+    color: #fc0707;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Box Styles */
+
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+  }
+
+  .box {
+    width: calc(30% - 20px);
+    margin-bottom: 20px;
+    background-color: #06060691;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .box img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .box-content {
+    padding: 15px;
+  }
+
+  .box-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .box-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .box-language {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .download-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #1fb536;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .download-btn:hover {
+    background-color: #ce1e1e;
+  }
+
+
+  /* Responsive Styles */
+
+  @media screen and (max-width: 768px) {
+    .box {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .box {
+      width: 100%;
+    }
+  }
+
+  /* FOOTER */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: black;
+    border-top: 2px solid white;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: auto; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        font-size: 12px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Top 10 Hollywood Movies</h1>
+</header>
+
+<div class="box-container">
+  
+  <div class="box">
+    <img src="avatar.jpg" alt="Image 1">
+    <div class="box-content">
+      <h2 class="box-title">Avatar</h2>
+      <p class="box-description">IMDB : <strong style="font-weight: bold">7.9</strong>/10</p>
+      <p class="box-language">Language: Hindi</p>
+      <a href="https://hdhub4u.re/avatar-2009-brrip-in-hindi-english-full-movie/" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="avengers-endgame.jpg" alt="Image 1">
+    <div class="box-content">
+      <h2 class="box-title">Avengers: Endgame</h2>
+      <p class="box-description">IMDB : <strong style="font-weight: bold">8.4</strong>/10</p>
+      <p class="box-language">Language: Hindi</p>
+      <a href="https://vegamovies.ong/download-avengers-endgame-2019-hindi/" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="avatar the way of water.jpg" alt="Image 1">
+    <div class="box-content">
+      <h2 class="box-title">Avatar: The way of water</h2>
+      <p class="box-description">IMDB : <strong style="font-weight: bold">7.6</strong>/10</p>
+      <p class="box-language">Language: Hindi</p>
+      <a href="https://hdhub4u.re/avatar-the-way-of-water-2022-hindi-org-imax-webrip-full-movie/" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="titanic.jpg" alt="Image 1">
+    <div class="box-content">
+      <h2 class="box-title">Titanic</h2>
+      <p class="box-description">IMDB : <strong style="font-weight: bold">7.9</strong>/10</p>
+      <p class="box-language">Language: Hindi</p>
+      <a href="https://hdhub4u.re/titanic-1997/" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="star wars.jpeg" alt="Image 1">
+    <div class="box-content">
+      <h2 class="box-title">Star Wars: Episode VII - The Force Awakens</h2>
+      <p class="box-description">IMDB : <strong style="font-weight: bold">7.8</strong>/10</p>
+      <p class="box-language">Language: Hindi</p>
+      <a href="https://vegamovies.ong/download-star-wars-episode-7-the-force-awakens-dual-audio-hindi-480p-720p-1080p/" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="aiw.webp" alt="Image 1">
+    <div class="box-content">
+      <h2 class="box-title">Avengers: Infinity War</h2>
+      <p class="box-description">IMDB : <strong style="font-weight: bold">8.4</strong>/10</p>
+      <p class="box-language">Language: Hindi</p>
+      <a href="https://vegamovies.ong/download-avengers-infinity-war-2018-dual-audio-hindi-org-bluray-480p-720p/" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="spider-mannowayhome.jpg" alt="Image 1">
+    <div class="box-content">
+      <h2 class="box-title">Spider-Man: No Way Home </h2>
+      <p class="box-description">IMDB : <strong style="font-weight: bold">8.2</strong>/10</p>
+      <p class="box-language">Language: Hindi</p>
+      <a href="https://vegamovies.ong/download-spider-man-no-way-home-2021-dual-audio-hindi-480p-720p-1080p-bluray-hd-movie/" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="Jurassic-World.jpg" alt="Image 1">
+    <div class="box-content">
+      <h2 class="box-title"> Jurassic World</h2>
+      <p class="box-description">IMDB : <strong style="font-weight: bold">6.9</strong>/10</p>
+      <p class="box-language">Language: Hindi</p>
+      <a href="https://hdhub4u.re/jurassic-world-dominion-2022-hindi-org-webrip-full-movie/" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="the lion king.jpg" alt="Image 1">
+    <div class="box-content">
+      <h2 class="box-title">The Lion King</h2>
+      <p class="box-description">IMDB : <strong style="font-weight: bold">6.8</strong>/10</p>
+      <p class="box-language">Language: Hindi</p>
+      <a href="https://vegamovies.ong/download-the-lion-king-2019-dual-audio-movie-480p-720p-1080p/" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="Furious 7.png" alt="Image 1">
+    <div class="box-content">
+      <h2 class="box-title">Furious 7 </h2>
+      <p class="box-description">IMDB : <strong style="font-weight: bold">7.1</strong>/10</p>
+      <p class="box-language">Language: Hindi</p>
+      <a href="https://hdhub4u.re/fast-and-furious-7-2015-bluray-hindi-english/" class="download-btn">Download</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+    <div class="footer-container">
+      <p>2024 &copy; VCinemagic World | All Rights Reserved | Thank You |</p>
+    </div>
+  </footer>
+
+</body>
+</html>

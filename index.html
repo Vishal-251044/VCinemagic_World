@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Top movies and web series</title>
+    <link rel="stylesheet" href="style.css" class="css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">VCinemagic World</a></div>
+        <ul class="links">
+          <li><a href="#"><u style="color: brown;">Home</u></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="getstarted.html" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="#"><u style="color: brown;">Home</u></a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="getstarted.html" class="action_btn">Get Started</a></li>
+      </div>
+    </header>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+
+    <section id="main_web1">
+      <h1>Welcome to VCinemagic World</h1>
+      <p>
+        This website provides a list of the top 10 movies and web series suited
+        to your interests. <br \ />
+        Tap on the '<strong style="font-weight: bold">Get Started</strong>'
+        button in the top right corner to begin.
+      </p>
+    </section>
+
+    <section id="main_web2">
+      <div class="trailer">
+        <p>View Trailer</p>
+        <i class="fa-sharp fa-solid fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <section id="main_web3">
+      <div class="container">
+        <a href="https://youtu.be/ACKQDAlAfFE?si=BEHjNRFv_h2cTfXc">
+          <img src="dunki.jpg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>Dunki</h3>
+            <p>IMDB : <strong style="font-weight: bold">7.2</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/Y6ZKXqM7HNQ?si=okWrA2fvjN9FDFLd">
+          <img src="omg2.jpg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>OMG 2</h3>
+            <p>IMDB : <strong style="font-weight: bold">7.6</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/cxA2y9Tgl7o?si=IzJk-d87aRBZI0pM">
+          <img src="drishyam2.jpg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>Drisham 2</h3>
+            <p>IMDB : <strong style="font-weight: bold">8.2</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/COv52Qyctws?si=TJYTsJoz5S4sgTl4">
+          <img src="Jawan.jpg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>Jawan</h3>
+            <p>IMDB : <strong style="font-weight: bold">7</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/8FkLRUJj-o0?si=Z-SWd5z-K1TAwLyB">
+          <img src="Animal.jpg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>Animal</h3>
+            <p>IMDB : <strong style="font-weight: bold">6.4</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/GXWfue9VhTY?si=wibRULAMqCoEBxlw">
+          <img src="Adipurush.jpeg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>Adipurush</h3>
+            <p>IMDB : <strong style="font-weight: bold">3.1</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/8EPJiFfWRfw?si=dZBL_prYJ0F8St_c">
+          <img src="Satyaprem-Ki-Katha.avif" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>SPKK</h3>
+            <p>IMDB : <strong style="font-weight: bold">6.8</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/WeMJo701mvQ?si=2uaWaqG-o51d0h0E">
+          <img src="12th Fail.jpg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>12th Fail</h3>
+            <p>IMDB : <strong style="font-weight: bold">9.1</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/Pr2jBvbiy04?si=TBvdkb0_TZ3v6Q4B">
+          <img src="Salaar.jpg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>Salar</h3>
+            <p>IMDB : <strong style="font-weight: bold">6.5</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/u5r77-OQwa8?si=bK_3GuV_RzBuwVCj">
+          <img src="sooryavanshi.jpg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>Sooryavanshi</h3>
+            <p>IMDB : <strong style="font-weight: bold">6.0</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/G62HrubdD6o?si=lyUopppzgCW99DlD">
+          <img src="Bahubali2.webp" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>Bahubali 2</h3>
+            <p>IMDB : <strong style="font-weight: bold">8.2</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/6oKFao0aISA?si=Z8tMEQ3bSkE-Lxnn">
+          <img src="Kantara.jpeg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>Kantara</h3>
+            <p>IMDB : <strong style="font-weight: bold">8.2</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/SOXWc32k4zA?si=1RjehdX9o_TZzrDS">
+          <img src="pk.jpg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>PK</h3>
+            <p>IMDB : <strong style="font-weight: bold">8.1</strong>/10</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/pKctjlxbFDQ?si=vYDZbMRY4cEf8x-Q">
+          <img src="pushpa.jpg" alt="Image 1" class="image" />
+          <div class="image-info">
+            <h3>Pushpa</h3>
+            <p>IMDB : <strong style="font-weight: bold">7.6</strong>/10</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <p>2024 &copy; VCinemagic World | All Rights Reserved | Thank You |</p>
+      </div>
+    </footer>
+  </body>
+</html>

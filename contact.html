@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Top movies and web series</title>
+    <link rel="stylesheet" href="contact.css" class="css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">VCinemagic World</a></div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li>
+            <a href="contact.html"><u style="color: brown">Contact</u></a>
+          </li>
+        </ul>
+        <a href="getstarted.html" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li><a href="services.html">Services</a></li>
+        <li>
+          <a href="contact.html"><u style="color: brown">Contact</u></a>
+        </li>
+        <li><a href="getstarted.html" class="action_btn">Get Started</a></li>
+      </div>
+    </header>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+
+<section id="contact">
+  <h1 style="color: white;">Contact Us</h1>
+  <div class="container">
+      <div class="info">
+          <i class="fas fa-phone-alt"></i>
+          <p>+91 8010045390</p>
+      </div>
+      <div class="info">
+          <i class="fas fa-envelope"></i>
+          <p>vsc251044@gmail.com</p>
+      </div>
+      <div class="social-media">
+          <a href="https://www.facebook.com/profile.php?id=100073061940487&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+          <a href="twitter.com/Vishal701567003?s=09"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/vishalchavan3923?igsh=dHVybDhrMHRncmpk"><i class="fab fa-instagram"></i></a>
+          <a href="linkedin.com/in/vishal-chavan-498b67262"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/@vishalschavan666?si=B7p2cFr3BNH_ep4l"><i class="fab fa-youtube"></i></a>
+      </div>
+  </div>
+</section>
+
+<script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js" crossorigin="anonymous"></script>
+
+    <footer>
+      <div class="footer-container">
+        <p>2024 &copy; VCinemagic World | All Rights Reserved | Thank You |</p>
+      </div>
+    </footer>
+  </body>
+</html>
